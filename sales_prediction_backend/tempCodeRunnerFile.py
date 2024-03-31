@@ -1,1 +1,0 @@
-vdpshyam@kaartech.com
