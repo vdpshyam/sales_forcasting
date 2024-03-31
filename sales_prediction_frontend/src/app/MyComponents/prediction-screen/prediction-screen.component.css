@@ -1,0 +1,97 @@
+button.logout-btn{
+  background-color: rgba(32, 29, 217, 0.112);
+  margin-right: 50px;
+}
+
+button.download-results-btn{
+  background-color: rgba(65, 105, 225, 0.889);
+  color: #fff;
+}
+
+p {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+.page-title {
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+#MyChart{
+padding: 00px;
+}
+
+.display-2 {
+  letter-spacing: 1px;
+  margin-top: 35px;
+  margin-left: 80px;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+div.img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+div.img-div-test,
+div.img-div-pred {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+img {
+  margin: 0 auto;
+  width: 85%;
+}
+
+div.table-div {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+}
+
+hr {
+  border: 5px;
+  border-style: dotted;
+  border-color: rgb(104, 103, 103);
+  border-bottom: 0px;
+  width: 40%;
+  margin: auto;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.logout-btn{
+  background-color: #404969;
+  border-color: white;
+}
+
+mat-toolbar{
+  background-color: #fff;
+  font-size: 2.5vmax;
+  padding-left: 4vmax;
+  padding-top: 3vmax;
+  padding-bottom: 3vmax;
+}
+
+.download-btn-div{
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-success{
+  background-color: #d1faff;
+  color: black;
+}

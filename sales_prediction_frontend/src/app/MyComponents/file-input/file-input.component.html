@@ -1,0 +1,56 @@
+<div class="spinner_overlay" *ngIf="showingProgressSpinner"></div>
+<p class="spinner-p" *ngIf="showingProgressSpinner">Processing...</p>
+<mat-progress-spinner [color]="color" [mode]="mode" [value]="value" [diameter]="40" *ngIf="showingProgressSpinner">
+</mat-progress-spinner>
+<div>
+    <mat-toolbar>
+        <span class="page-title">Sales Forecasting </span>
+        <span class="example-spacer"></span>
+        <button mat-stroked-button class="logout-btn" (click)="onLogoutClick()">Logout</button>
+    </mat-toolbar>
+</div>
+<h1 class="display-2">Upload Dataset and select Duration.</h1>
+<div class="cont">
+    <table>
+        <tr>
+            <td class="enter-details-cell">
+                <mat-card class="mat-elevation-z0">
+                    <mat-card-content>
+                        <mat-card-title>Enter duration</mat-card-title>
+                        <mat-card-subtitle>Please select a minimum of 1 month or 30 days</mat-card-subtitle>
+                        <div class="intervel-selector">
+                            <mat-form-field appearance="outline" class="intervel-selector-dropdown">
+                                <mat-label>Select Interval</mat-label>
+                                <mat-select [(ngModel)]="selectedDWMY" required="">
+                                    <mat-option *ngFor="let dwmy of daWeMoYe" [value]="dwmy.days">
+                                        {{dwmy.viewValue}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="intervel-selector-multiplier">
+                                <mat-label>Select Multiplier</mat-label>
+                                <input type="number" matInput [formControl]="numberFormControl"
+                                    placeholder="Ex. 1,2,3..." min="1">
+                            </mat-form-field>
+                        </div>
+                        <br>
+                        <mat-card-title>Upload sales dataset</mat-card-title>
+                        <mat-card-subtitle>Upload only .csv files</mat-card-subtitle>
+                        <div class="input-group file-input">
+                            <input type="file" class="form-control" aria-label="Upload" (change)="onFileUpload($event)"
+                                #fileInput accept=".csv" required="true">
+                        </div>
+                        <mat-card-actions align="end">
+                            <button class="submit-btn" mat-raised-button color="warn" (click)="onSubmitClick()">Submit
+                                and view
+                                results</button>
+                        </mat-card-actions>
+                    </mat-card-content>
+                </mat-card>
+            </td>
+            <td class="image-cell">
+                <img class="enter-details-decor-image" src="../../../assets/Images/enterDetails1.jpg" />
+            </td>
+        </tr>
+    </table>
+</div>

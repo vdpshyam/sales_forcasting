@@ -1,0 +1,131 @@
+button.logout-btn{
+  background-color: rgba(32, 29, 217, 0.112);
+  margin-right: 50px;
+}
+
+div.cont {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+img.enter-details-decor-image{
+  height: 70%;
+  width: 70%;
+}
+
+mat-card-title{
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+mat-progress-spinner {
+  position: absolute;
+  top: 49%;
+  left: 46%;
+  z-index: 20;
+}
+
+.page-title {
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+td.enter-details-cell {
+  width: 50%;
+  padding-left: 5vmax;
+}
+
+td.image-cell {
+  width: 50%;
+  text-align: center;
+  width: min-content;
+  height: min-content;
+}
+
+.spinner_overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.spinner-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+}
+
+div.intervel-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+mat-card {
+  height: fit-content;
+  width: auto;
+}
+
+button.upload-data-btn {
+  background-color: #bde4f4;
+  margin-right: 21px;
+}
+
+button.upload-file-btn {
+  background-color: #bde4f4;
+  color: black;
+}
+
+.file-input {
+  margin: 15px;
+  width: 635px;
+}
+
+button.submit-btn {
+  margin: 15px;
+}
+
+.intervel-selector {
+  margin: 15px;
+}
+
+footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.intervel-selector-dropdown,
+.intervel-selector-multiplier {
+  height: 50px;
+  width: 300px;
+}
+
+.display-2 {
+  letter-spacing: 1px;
+  margin-top: 35px;
+  margin-left: 80px;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+
+mat-toolbar{
+  background-color: #fff;
+  font-size: 2.5vmax;
+  padding-left: 4vmax;
+  padding-top: 3vmax;
+  padding-bottom: 3vmax;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.submit-btn{
+  background-color: rgb(69, 69, 250);
+  /* margin-right: 50px; */
+}

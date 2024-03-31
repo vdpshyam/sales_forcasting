@@ -1,0 +1,65 @@
+<div>
+    <mat-toolbar>
+        <span class="page-title">Sales Forecasting </span>
+        <span class="example-spacer"></span>
+        <button mat-stroked-button class="logout-btn" (click)="onLogoutClick()">Logout</button>
+    </mat-toolbar>
+</div>
+<h1 class="display-2">Analysis and Prediction.</h1>
+<!-- <hr> -->
+<div class="img-div">
+    <div class="img-div-test">
+        <p>1. Comparison between the recorded sales and the predicted sales by the model in the
+            past 1 year</p>
+        <img [src]="imageUrlTest">
+    </div>
+    <!-- <hr> -->
+    <div class="img-div-pred">
+        <p>2. Predicted sales for next {{selMul}} {{selInt}}</p>
+        <img [src]="imageUrlPred">
+    </div>
+</div>
+<!-- <div class="chart-container">
+    <canvas id="MyChart">{{ chart }}</canvas>
+</div>
+<div class="download-btn-div">
+    <button type="button" class="btn btn-success" (click)="onDownloadClickOneStepAhead()">OneStepAhead</button>
+    <button type="button" class="btn btn-success" (click)="onDownloadClickResid()">Resid</button>
+    <button type="button" class="btn btn-success" (click)="onDownloadClickSalesTrainData()">SalesTrainData</button>
+    <button type="button" class="btn btn-success" (click)="onDownloadClickSeasonal()">Seasonal</button>
+    <button type="button" class="btn btn-success" (click)="onDownloadClickTrend()">Trend</button>
+</div> -->
+<!-- <hr> -->
+<p>3. Evaluation metrices for the model</p>
+<div class="table-div">
+    <table class="table">
+        <thead class="table">
+            <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Metric</th>
+                <th scope="col">Value</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            <tr>
+                <th scope="row">1</th>
+                <td>MSE</td>
+                <td>{{mse}}</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>RMSE</td>
+                <td>{{rmse}}</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>MAPE</td>
+                <td>{{mape}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="download-btn-div">
+    <button mat-stroked-button class="download-results-btn" (click)="onPredResultsDownloadClick()">Download the predicted
+        results CSV</button>
+</div>
