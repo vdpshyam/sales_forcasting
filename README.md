@@ -5,7 +5,7 @@ This is a sales forecasting website built using Angular for the frontend and Fla
 
 ## Features
 
-- **User Authentication :** ecure user authentication system to allow only registered users access to the application. The default UserId is "random@random.com" and password is "12345678".
+- **User Authentication :** secure user authentication system to allow only registered users access to the application. The default UserId is "random@random.com" and password is "12345678".
 - **Data Visualization :** Charts and graphs to visualize sales data trends and patterns.
 - **Sales Prediction:** Utilizes machine learning algorithms to forecast future sales based on historical data. The model used here is SARIMA.
 - **Data Management :** Allows users to upload, manage, and manipulate sales data for analysis.
