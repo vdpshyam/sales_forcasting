@@ -39,7 +39,7 @@ git clone https://github.com/vdpshyam/sales_forcasting.git
 2. Navigate to the frontend directory:
 
 ```bash
-cd sales_prediction_frontend
+cd sales_forcasting/sales_prediction_frontend
 ```
 
 3. Install the dependencies:
